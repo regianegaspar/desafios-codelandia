@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root{
+    /* --cor01: #22223b;
+    --cor02: #4a4e69;
+    --cor03: #9a8c98;
+    --cor04: #c9ada7;
+    --cor05: #f2e9e4; */
+
+    --cor01: #212a3e;
+    --cor02: #394867;
+    --cor03: #9ba4b5;
+    --cor04: #f1f6f9;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--cor01);
+    font-family: 'Itim', cursive;
+}
+
+header{
+    align-items: center;
+    background: var(--cor02);
+    color: var(--cor03);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 40px;
+}
+
+header p{
+    max-width: 1200px;
+    text-align: center;
+}
+
+header a{
+    color: var(--cor04);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main{
+    align-items: center;
+    background: var(--cor04);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card{
+    border: 1px solid var(--cor02);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px var(--cor03);
+    padding: 20px;
+    width: 290px;
+}
+
+.card h3{
+    margin: 10px;
+    text-shadow: 2px 2px 2px var(--cor04);
+}
+
+.card p{
+    color: var(--cor03);
+    padding: 10px;
+}
+
+ul{
+    color: var(--cor02);
+    padding: 5px;
+}
+
+ul a{
+    color: var(--cor01);
+    padding: 9px;
+    text-decoration: none;
+}
+
+
+ul a:hover{
+    background: var(--cor03);
+    border: 1px solid var(--cor04);
+    border-radius: 5px;
+}
+
+footer{
+    background: var(--cor03);
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background: #f3f5f7;
+}
+
+header{
+    align-items: center;
+    background: linear-gradient(to right, #574ae8, #3ea1db);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: center;  
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18p;
+    justify-content: space-between;
+    gap: 10px;
+    height: 50%;
+    list-style: none;
+    width: 80vw;
+}
+
+.busca{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.326);
+    color: white;
+    width: 80vw;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+
+#pesquisar{
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+}
+
+#pesquisar::placeholder{
+    color: #b9c7f8;
+}
+
+section{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+article{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.texto1{
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    justify-content: space-between;
+    color: #717171;
+}
+
+.bi-heart{
+    color: #574ae8;
+    cursor: pointer;
+}
+
+#checkbox:checked + .bi-heart{
+    color: red;
+  }
+
+#checkbox{
+    display: none;
+}
+
+.texto2{
+    padding: 10px 0;
+    color: #1a202c;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.texto2 h3{
+    font-size: 18px;
+}
+
+.texto2 p{
+    color: #717171;
+    font-size: 14px;
+}

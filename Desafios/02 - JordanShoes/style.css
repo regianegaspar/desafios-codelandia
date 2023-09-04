@@ -1,0 +1,123 @@
+:root{
+    --azul: #00aeff;
+    --branco: #f9f9f9;
+    --cinza: #474747;
+    --cinza-claro: #ebe9ea;
+    --preto: #181818;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--branco);
+    color: var(--preto);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    height: 120px;
+    width: 100%;
+}
+
+header p{
+    background-color: var(--azul);
+    font-weight: 500;
+    font-size: 16px;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header h3{
+    font-weight: 600;
+    font-size: 24px;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    align-items: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(#313131ac, #121212da), url(imagens/Air-Jordan-1-Retro-High-OG-Wmns-TWIST-Feminino\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    min-height: 400px;
+    width: 100%;
+}
+
+
+section h2{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+section p{
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.destaques{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin: 100px 40px;
+    text-align: center;
+}
+
+.destaques h3{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.destaques p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.imagens{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.img{
+    align-items: center;
+    background-color: var(--cinza-claro);
+    display: flex;
+    height: 300px;
+    justify-content:center;
+    width: 300px;
+}
+
+footer{
+    align-items: center;
+    background: var(--azul);
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    height: 60px;
+    justify-content: center;
+}
