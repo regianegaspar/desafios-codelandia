@@ -68,14 +68,13 @@ section h2{
 }
 
 section p{
-    animation: animar 2s linear infinite;
-    background: linear-gradient(to right, #b744e8 10%, #15eaf1 50%, #b744e8 90%);
+    animation: aparecer 3s forwards infinite alternate;
+    opacity: 0;
+    color: white;
     background-size: 200% auto;
     font-weight: 600;
     font-size: 16px;
     max-width: 600px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .destaques{
@@ -131,8 +130,11 @@ footer{
     justify-content: center;
 }
 
-@keyframes animar{
-    to {
-        background-position: 200% center;
+@keyframes aparecer {
+    0% {
+      opacity: 0;
     }
-}
+    100% {
+      opacity: 1;
+    }
+  }
