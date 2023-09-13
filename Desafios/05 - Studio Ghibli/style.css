@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    padding: 0 50px;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.logo2{
+    display: none;
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 90vw;
+}
+
+.ilustracao{
+    animation: animar 1.5s alternate infinite ease-in-out;
+    max-width: 70vw;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 109%;
+    padding: 15px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    padding: 15px;
+}
+
+.botoes{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+
+.ver, .trailer{
+    background: #628E75;
+    border: 1px solid #628E75;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    height: 45px;
+    line-height: 180%;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 225px;
+    -webkit-transform: skewX(-15deg);
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.ver:hover, .trailer:hover{
+    border: 1px solid #f9f9f9;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.trailer{
+    background: #1A4855;
+}
+
+.trailer:hover{
+    background: #628E75;
+}
+
+@keyframes animar{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+@media screen and (min-width: 780px){
+    .logo{
+        display: none;
+    }
+
+    .logo2{
+        display: block;
+    }
+
+    main{
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .ilustracao{
+        max-width: 500px;
+    }
+    section{
+        width: 40vw;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 68px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}

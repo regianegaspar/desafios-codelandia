@@ -49,18 +49,28 @@ main{
     align-items: center;
     background: var(--cor04);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     gap: 5rem;
     justify-content: center;
     padding: 40px;
 }
 
 .card{
-    border: 1px solid var(--cor02);
+    /* border: 1px solid var(--cor02);
     border-radius: 5px;
-    box-shadow: 2px 2px 2px var(--cor03);
+    box-shadow: 2px 2px 2px var(--cor03); */
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
-    width: 290px;
+    width: 60vw;
+}
+
+.descricao{
+    text-align: right;
 }
 
 .card h3{
@@ -75,20 +85,29 @@ main{
 
 ul{
     color: var(--cor02);
-    padding: 5px;
+    line-height: 30px;
+    list-style-type: none;
+    padding: 18px 0;
 }
+
 
 ul a{
     color: var(--cor01);
-    padding: 9px;
+    padding: 5px;
     text-decoration: none;
 }
 
 
 ul a:hover{
     background: var(--cor03);
-    border: 1px solid var(--cor04);
     border-radius: 5px;
+}
+
+.projeto{
+    border: 1px solid var(--cor03);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px var(--cor01);
+    max-height: 400px;
 }
 
 footer{
