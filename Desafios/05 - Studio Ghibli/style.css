@@ -69,10 +69,11 @@ p{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-around;
+    gap: 40px;
+    justify-content: flex-start;
     margin-top: 15px;
     padding: 15px;
+    transform: skew(-24deg);
 }
 
 
@@ -87,7 +88,6 @@ p{
     text-decoration: none;
     text-transform: uppercase;
     width: 225px;
-    -webkit-transform: skewX(-15deg);
     align-items: center;
     display: flex;
     gap: 15px;
@@ -136,6 +136,7 @@ p{
     .ilustracao{
         max-width: 500px;
     }
+
     section{
         width: 40vw;
     }

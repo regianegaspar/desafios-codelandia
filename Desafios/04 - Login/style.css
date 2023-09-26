@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
+:root{
+    --azul: #2b6cb0;
+    --azul-claro: #f7fafc;
+    --branco:#fff;
+    --cinza: #e8e8e8;
+    --preto: #1a202c;
+    --verde: #04c35c;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,140 +16,145 @@
 }
 
 body{
-    align-items: center;
-    background: #f7fafc;
-    box-sizing: border-box;
-    color: #1a202c;
-    display: flex;
+    color: var(--preto);
+    padding: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    justify-content: center;
-    padding: 30px 10px;
-    width: 100vw;
 }
 
-.imgprincipal, section{
-    width: 50%;
-}
-
-.imgprincipal{
+.imagem{
+    background: var(--cinza);
     display: none;
-    max-width: 400px;
 }
 
-p:nth-child(1){
+section{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+section p, h1{
     font-family: 'Merriweather', serif;
 }
 
 h1{
-    font-family: 'Merriweather', serif;
     font-weight: 700;
     font-size: 26px;
 }
 
-
-
-section{
-    align-items: flex-start;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 100vh;
-    justify-content: center;
-    padding: 15px;
-}
-
 .formulario{
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
 }
 
 #email, #senha{
-    border: 1px solid #e8e8e8;
+    border: 1px solid var(--cinza);
     border-radius: 5px;
-    color: #1a202c;
-    font-family: 'Lato', sans-serif;
+    color: var(--preto);
     padding: 10px;
-    width: 80vw;
+    width: 100%;
+}
+
+#email:hover, #senha:hover{
+    border: 1px solid var(--verde);
 }
 
 .outros{
     align-items: center;
     display: flex;
-    font-size: 14px;
     justify-content: space-between;
-    width: 80vw;
+    width: 100%;
 }
 
-.outros div:nth-child(1){
+.outros div{
     align-items: center;
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
-#lembrar{
-    background-color: #f7fafc;
-    /* border: 1px solid #e8e8e8; */
-    color: blue;
-    background: blue;
+#lembrar:hover, .outros label:hover{
+    cursor: pointer;
 }
 
-a{
-    color: #2b6cb0;
+.outros a{
+    color: var(--azul);
     text-decoration: none;
 }
 
 .entrar, .login{
-    align-items: center;
     border: none;
     border-radius: 5px;
-    color: #fff;
-    display: flex;
+    color: var(--branco);
     font-weight: 700;
-    gap: 5px;
     height: 50px;
-    justify-content: center;
-    width: 80vw;
+    width: 100%;
 }
 
 .entrar{
-    background: #04c35c;
+    background: var(--verde);
+}
+
+.entrar:hover{
+    background: var(--preto);
+    border: 2px solid var(--verde);
+    cursor: pointer;
 }
 
 .login{
-    background: #1a202c;
-}
-
-p:last-child{
     align-items: center;
+    background: var(--preto);
     display: flex;
+    gap: 10px;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 0;
 }
 
-@media screen and (min-width:760px){
+.login:hover{
+    background: var(--verde);
+    border: 2px solid var(--preto);
+    cursor: pointer;
+}
+
+section p:last-child{
+    align-items: flex-end;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+section p:last-child a{
+    color: var(--azul);
+    text-decoration: none;
+}
+
+@media screen and (min-width:800px){
     body{
-        justify-content: space-around;
-        padding: 20px;
+        display: flex;
+        height: 100vh;
+        padding: 0;
+        width: 100%;
+    }
+
+    .imagem{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 50%;
     }
 
     .imgprincipal{
-        display:block;
-        width: 50vw;
+        max-width: 400px;
     }
 
     section{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #email, #senha, .entrar, .login, .outros{
-        width: 40vw;
+        margin: 0 auto;
     }
 }
