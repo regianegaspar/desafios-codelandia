@@ -1,0 +1,66 @@
+@media (min-width: 700px){
+    .inicio-logo{
+        justify-content: flex-start;
+    }
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 24px;
+    }
+
+    button{
+        font-size: 18px;
+        width: 238px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .tempo > p{
+        font-size: 20px;
+    }
+
+    .tempo > #contagem{
+        font-size: 64px;
+    }
+
+    .informacoes{
+        padding-top: 60px;
+    }
+
+    .informacoes-texto > p{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 993px){
+    .inicio, .informacoes{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px 60px;
+    }
+
+    .inicio > article, .informacoes-texto{
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    /* falta colocar o botão na esquerda */
+    .informacoes-texto > button{
+        margin-left: 0;
+        float: left;
+    }
+
+    h2{ 
+        font-size: 44px;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}

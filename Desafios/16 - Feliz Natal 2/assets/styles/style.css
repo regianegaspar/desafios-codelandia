@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #121214;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.inicio, .inicio-logo, .tempo, .informacoes, .informacoes-texto, footer, .sociais, .rodape-logo, .social{
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.inicio{
+    background-color: #ffe9e8;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.inicio article{
+    text-align: center;
+}
+
+.inicio-logo{
+    gap: 12px;
+    padding-top: 30px;
+}
+
+.logo-img{
+    width: 35px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 32px;
+    padding: 30px 0;
+}
+
+span{
+    color: #cd3c32;
+}
+
+button{
+    background-color: #cd3c32;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 30px;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    width: 327px;
+}
+
+.inicio > img{
+    padding: 30px 0;
+}
+
+.tempo{
+    flex-direction: column;
+    padding:30px;
+    text-align: center;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.tempo > #contagem{
+    color: #cd3c32;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.informacoes, .informacoes-texto {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+.informacoes{
+    padding-top: 70px;
+}
+
+footer{
+    background-color: #ffe9e8;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+.social{
+    background-color: #ffd5d3;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.social-img{
+    height: 18px;
+}

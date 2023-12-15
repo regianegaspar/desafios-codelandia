@@ -14,21 +14,8 @@ Para resolver o desafio utilizei HTML e CSS. O objetivo foi uma landingpage com 
 ### 03 - One Page
 Para esse desafio realizado com HTML e CSS utilzei a validação do formulário no footer e flex-wrap para acrescentar a responsividade.
 
-### 04 - Login
-Em desenvolvimento
-
-### 05 - Studio Ghibli
-Em desenvolvimento
-
-### 06 - Loki
-
-### 07 - Valorant
-
-### 08 - codeMoji
-
-### 09 - Portfolio
-
-### 10 - Naped
+### 16 - Feliz Natal
+Landing page onde utilizei HTML e CSS para praticar minhas habilidades, além do JavaScript para fazer uma contagem regressiva até o Natal do ano atual.
 
 
 <p align="center"> Feito com 🤍 by Regiane Gaspar </p>
